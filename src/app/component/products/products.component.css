@@ -1,0 +1,79 @@
+.card-top {
+    position:fixed;
+    margin-top: 70px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: .25rem;
+}
+
+.item img {
+    width: 64px;
+}
+
+.item {
+    margin: 0px 15px;
+    text-align: center;
+}
+
+.item a:hover {
+    color: blue;
+}
+.row{
+    justify-content: center;
+}
+.card {
+    background-color: #FFE6E6;
+    border: solid black 1px;
+    padding: 20px;
+    margin: 40px;
+}
+
+.card img {
+    margin-left: 20px;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.card img:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+.selectbutton{
+    margin-left: 80px;
+    margin-top:30px ;
+}
+.sortbutton{
+    margin-top:30px ;   
+}
+.pagination{
+    margin-top: 20px;
+    justify-content:center;
+}
+.color{
+    color: white;
+    background-color: black;
+}
+.color:hover{
+    background-color:blue;
+    color: white;
+}
+.form-control{
+    margin-top: 30px;
+    width: 266px;
+    background-color: #FFE6E6;;
+    color: black;
+    border: 1px solid black;
+    color: blue;
+}
+
+.nav-page{
+    align-items: center;
+}

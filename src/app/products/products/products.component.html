@@ -1,0 +1,85 @@
+<div class="card-top container-fluid" style="background-color: #FFE6E6;">
+    <div class="container d-flex">
+        <div class="item">
+            <a (click)="filter('')">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="">
+                <h6>All products</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('Gudgets')">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" alt="">
+                <h6>Gadgets</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('fashion')">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/82b3ca5fb2301045.png?q=100" alt="">
+                <h6>Fashion</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('jewellery')">
+                <img style="width: 62px; margin-top: 5px;" src="https://rukminim1.flixcart.com/image/580/696/kkh6zrk0/jewellery-set/o/w/z/gt-ns-862-matushri-art-original-imafzt9teacakjyn.jpeg?q=50" alt="">
+                <h6>Jewllery</h6>
+            </a>
+        </div>
+        <div class="item">
+            <div class="dropdown selectbutton">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                    Select Item
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li> <a class="dropdown-item" (click)="filter('')">All products</a></li>
+                    <li><a class="dropdown-item" (click)="filter('Gudgets')">Gadgets</a></li>
+                    <li> <a class="dropdown-item" (click)="filter('fashion')">Fashion</a></li>
+                    <li><a class="dropdown-item" (click)="filter('jewellery')">Jewelry</a></li>
+                  </ul> 
+            </div>
+        </div>
+        <div class="item">
+            <div class="dropdown sortbutton">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuSort" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Sort By
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li> <a class="dropdown-item" (click)="sortByName('asc')">Ascending</a></li>
+                    <li><a class="dropdown-item" (click)="sortByName('desc')">Descending</a></li>
+                  </ul> 
+                 
+            </div>
+        </div>
+        <!-- <div class="form-group">
+            <input type="text" class="form-control" (keyup)="onSizeChange($event)" placeholder="limit the number of products">
+        </div> -->
+    </div>
+</div>
+
+
+<!-- <div  class="container">
+    <div class="row nav-page">
+        <pagination-controls
+            previousLable="Prev"
+            nextLable="Next"
+            (pageChange)="onPageNumberChange($event)"
+        >
+        </pagination-controls>
+    </div>
+    <div class="row">
+        <ng-container *ngFor="let item of filterCategory| filter:searchKey:'name' | sortAsc:sortOrder |paginate:{
+            itemsPerPage: tableSize,
+            currentPage:page,
+            totalItems:count}; let i=index" >
+            <div class="card col-md-3">
+                <img src="{{item.image}}" alt="">
+                <h5>{{item.name}}</h5>
+                <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.description}}</p>
+                <p><strong>Price:</strong> ${{item.price}}</p>
+                <button class="btn btn-dark " (click)=addtocart(item)>Add to cart</button>
+            </div>
+        </ng-container>
+    </div>
+
+</div> -->
+
+

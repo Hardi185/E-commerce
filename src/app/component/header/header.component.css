@@ -1,0 +1,17 @@
+.sticky-top{
+    position: fixed;
+}
+.form-control {
+    border-radius: 3px;
+    width: 600px;
+    margin-left: 20px;
+}
+
+.search-icon {
+    position: absolute;
+    margin-right: 193px;
+    z-index: 10;
+    right: 24%;
+    top: 20px;
+    color: blue;
+}
